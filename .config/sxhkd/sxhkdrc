@@ -8,7 +8,7 @@ super + Return
 
 # program launcher
 ctrl + shift + Return
-    rofi -show run
+    rofi -show drun -show-icons
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -109,7 +109,7 @@ super + ctrl + shift + space
 #
 
 # expand a window by moving one of its side outward
-super + alt + {h,j,k,l}
+super + alt + {Left,Down,Up,Right}
 	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
 
 # contract a window by moving one of its side inward
@@ -122,13 +122,13 @@ super + {h,j,k,l}
 
 #Volume Control
 XF86MonBrightness{Up,Down}
-    brightnessctl s 4000{+,-}
+    ~/.config/scripts/brightness.sh {up,down}
 
 # Changing the Volume
 XF86Audio{Raise,Lower}Volume
-    amixer set Master {5%+,5%-}
+    ~/.config/scripts/volume.sh {up,down}
 XF86AudioMute
-    amixer set Master toggle
+    ~/.config/scripts/volume.sh mute
 #
 # Custom
 #
