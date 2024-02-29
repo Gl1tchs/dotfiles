@@ -1,0 +1,33 @@
+[global]
+font = Source Code Pro 10
+format = "<b>%s</b>\n%b"
+progress_bar = false
+frame_width = 1
+
+[urgency_low]
+    background = "#191724"
+    foreground = "#FFFFFF"  
+
+[urgency_normal]
+    background = "#191724"
+    foreground = "#FFFFFF"  
+
+[urgency_critical]
+    background = "#191724"
+    foreground = "#FF8080"
+
+[urgency_low]
+    timeout = 10
+    background = "#191724"
+    foreground = "#FFFFFF"  
+
+[urgency_normal]
+    timeout = 10
+    background = "#191724"
+    foreground = "#FFFFFF"  
+
+[urgency_critical]
+    timeout = 0
+    background = "#191724"
+    foreground = "#FF8080"
+
