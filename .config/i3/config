@@ -1,12 +1,14 @@
 set $mod Mod4
 
-font Source Code Pro 8
+font pango:Roboto Regular 10
 
 exec --no-startup-id dex --autostart --environment i3
 
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 exec --no-startup-id nm-applet
+
+exec --no-startup-id xmodmap ~/.Xmodmap
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -169,5 +171,16 @@ bar {
 
 # remove title bar
 for_window [class="^.*"] border pixel 1
+
+# window title
+for_window [class=".*"] title_format "<b>%title</b>"
+
 gaps inner 6
 gaps outer 1
+
+# floating applicaitons
+for_window [class="Blueberry.py" instance="blueberry.py"] floating enable
+for_window [class="Nemo" instance="nemo"] floating enable
+for_window [class="Qalculate" instance="qalculate"] floating enable
+
+
