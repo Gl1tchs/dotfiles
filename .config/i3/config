@@ -10,6 +10,8 @@ exec --no-startup-id nm-applet
 
 exec --no-startup-id xmodmap ~/.Xmodmap
 
+bindsym Print exec flameshot gui
+
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.config/dunst/volume.sh up && $refresh_i3status
