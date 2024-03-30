@@ -184,5 +184,5 @@ gaps outer 1
 for_window [class="Blueberry.py" instance="blueberry.py"] floating enable
 for_window [class="Nemo" instance="nemo"] floating enable
 for_window [class="Qalculate" instance="qalculate"] floating enable
-
+for_window [class="Gthumb" instance="gthumb"] floating enable
 
