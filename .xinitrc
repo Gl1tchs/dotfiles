@@ -7,7 +7,7 @@ xrandr --auto
 setxkbmap tr
 
 # set wallpaper
-feh --bg-scale ~/wallpaper.jpg &
+feh --bg-scale ~/wallpaper.png &
 
 # start notification deamon
 dunst -conf ~/.config/dunst/dunstrc &

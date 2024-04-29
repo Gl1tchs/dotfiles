@@ -12,6 +12,8 @@ exec --no-startup-id xmodmap ~/.Xmodmap
 
 bindsym Print exec flameshot gui
 
+bindsym $mod+l exec i3lock -c 232136
+
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.config/dunst/volume.sh up && $refresh_i3status
@@ -32,7 +34,7 @@ bindsym $mod+d exec --no-startup-id "rofi -show drun"
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
-bindsym $mod+l focus up
+# bindsym $mod+l focus up
 bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
